@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Links Page</title>
+  <!-- Font Awesome Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      padding: 50px; 
+      height: 100vh;
+      margin: 0;
+      /* Animated Gradient Background */
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 { 
+      color: #fff; 
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 15px auto;
+      padding: 15px 25px;
+      width: 280px;
+      background: rgba(0,0,0,0.6); /* Glass effect */
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+      backdrop-filter: blur(5px);
+    }
+    .link-btn:hover {
+      transform: scale(1.08);
+      background: rgba(0,0,0,0.8);
+    }
+
+    /* Icon colors */
+    .instagram .icon { color: #E1306C; }  /* Instagram pink */
+    .facebook .icon { color: #1877F2; }   /* Facebook blue */
+    .custom-link .icon { color: #28a745; }/* Green for custom site */
+
+    .icon {
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 Welcome to My Links</h1>
+
+  <!-- Custom Website -->
+  <a href="https://rangwik.com/" target="_blank" class="link-btn custom-link">
+    <i class="fa-solid fa-link icon"></i> Rangwik.com
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/rangwik_online/" target="_blank" class="link-btn instagram">
+    <i class="fab fa-instagram icon"></i> Instagram
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=61578388241927" target="_blank" class="link-btn facebook">
+    <i class="fab fa-facebook icon"></i> Facebook
+  </a>
+</body>
+</html>
