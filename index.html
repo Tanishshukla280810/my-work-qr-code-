@@ -8,16 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <style>
+
     body { 
       font-family: Arial, sans-serif; 
       text-align: center; 
       padding: 50px; 
-      height: 100vh;
+      height: 50vh;
       margin: 0;
-      /* Animated Gradient Background */
-      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-color: #1d1e1f;
       background-size: 400% 400%;
       animation: gradientMove 12s ease infinite;
+      
     }
 
     @keyframes gradientMove {
@@ -27,9 +28,13 @@
     }
 
     h1 { 
-      color: #fff; 
+      color: #fbf9f9; 
       margin-bottom: 30px;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      font-size: 50px;
+      padding-top:0;
+      padding-bottom: 30px;
+      font-family: serif;
     }
 
     .link-btn {
@@ -38,17 +43,18 @@
       justify-content: center;
       gap: 12px;
       margin: 15px auto;
-      padding: 15px 25px;
+      padding: 25px 40px;
       width: 280px;
       background: rgba(0,0,0,0.6); /* Glass effect */
       color: white;
       text-decoration: none;
-      border-radius: 12px;
+      border-radius: 50px;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 700;
       box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
       transition: transform 0.2s, background 0.3s;
       backdrop-filter: blur(5px);
+      font-size: 20px;
     }
     .link-btn:hover {
       transform: scale(1.08);
@@ -63,24 +69,36 @@
     .icon {
       font-size: 22px;
     }
+    .main{
+        background-color: #3f396c;
+        padding:50px;
+        width:40%;
+        border-radius: 30px;
+        justify-self: center;
+        margin-top: 7%;
+
+    }
+
   </style>
 </head>
 <body>
-  <h1>🌐 Welcome to My Links</h1>
+  <div class="main">
+   <h1>Welcome to My Portfolio</h1>
 
-  <!-- Custom Website -->
-  <a href="https://rangwik.com/" target="_blank" class="link-btn custom-link">
-    <i class="fa-solid fa-link icon"></i> Rangwik.com
-  </a>
+   <!-- Custom Website -->
+   <a href="https://rangwik.com/" target="_blank" class="link-btn custom-link">
+     <i class="fa-solid fa-link icon"></i> Rangwik.com
+   </a>
 
   <!-- Instagram -->
-  <a href="https://www.instagram.com/rangwik_online/" target="_blank" class="link-btn instagram">
-    <i class="fab fa-instagram icon"></i> Instagram
-  </a>
+   <a href="https://www.instagram.com/rangwik_online/" target="_blank" class="link-btn instagram">
+     <i class="fab fa-instagram icon"></i> Instagram
+   </a>
 
   <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=61578388241927" target="_blank" class="link-btn facebook">
-    <i class="fab fa-facebook icon"></i> Facebook
-  </a>
+   <a href="https://www.facebook.com/profile.php?id=61578388241927" target="_blank" class="link-btn facebook">
+     <i class="fab fa-facebook icon"></i> Facebook
+   </a>
+ </div>
 </body>
 </html>
